@@ -1,0 +1,22 @@
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+  }
+  
+  .menu li {
+    margin: 0;
+    padding: 15px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu a:hover {
+    background-color: #fca311;
+  }

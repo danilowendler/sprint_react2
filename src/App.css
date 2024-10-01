@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: wheat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Para garantir que a altura ocupe toda a tela */
+}
+
+.content-container {
+  flex: 1; /* Para ocupar o espaço restante entre o cabeçalho e o rodapé */
+  display: flex;
+  flex-direction: column; /* Para que o conteúdo fique em coluna */
+  padding: 20px; /* Adiciona espaçamento interno */
+}
+
+/* Ajuste a altura do contêiner principal */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  min-height: 800px; /* Define uma altura mínima para o contêiner */
+}
+
+.left-box, .right-box {
+  /* Ajuste para garantir que as caixas ocupem mais espaço */
+  flex: 1; /* Para ocupar o espaço disponível */
+  min-height: 400px; /* Altura mínima para as caixas */
+}
+
+.left-box {
+  /* Aumentar a largura para deixar mais espaço */
+  width: 65%; 
+}
+
+.right-box {
+  /* Aumentar a largura para deixar mais espaço */
+  width: 30%;
+}
+
+/* Slider */
+.slider {
+  height: 300px; /* Ajuste a altura do slider */
+}
+
+/* Ajuste para iframe */
+iframe {
+  width: 100%;
+  height: 100%; /* Ajuste para ocupar o espaço disponível */
+}
+
+/* Adicione isso ao seu App.css */
+.text-in-progress {
+  color: #ffffff; /* Substitua pela cor desejada */
+  font-weight: bold; /* Para destacar o texto */
+}
+
+.next-race-title {
+  color: #fdfdfd; /* Substitua pela cor desejada */
+  font-weight: bold; /* Para destacar o texto */
+}
+
+.next-race-date {
+  color: #ffffff; /* Substitua pela cor desejada */
+  font-weight: bold; /* Para destacar o texto */
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

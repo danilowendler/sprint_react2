@@ -1,0 +1,121 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navegação */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+}
+
+.menu li {
+    margin: 0;
+    padding: 15px 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #fca311;
+    color: #fff;
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    max-width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Conteúdo Principal */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Left Box (Next Race) */
+.left-box {
+    width: 65%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.left-box:hover {
+    transform: scale(1.02);
+}
+
+/* Right Box (Driver, Car, Ranking) */
+.right-box {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+/* Botão Voltar ao Topo */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fca311;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #e09b00;
+}
